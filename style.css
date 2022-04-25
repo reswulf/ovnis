@@ -1,28 +1,110 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
+
 body {
     background-color: black;
 }
-h1, h2 ,li,p {
+
+h1,
+h2,
+h3,
+h4,
+li,
+p {
     color: cyan;
 }
-ul {
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ol {
     list-style-type: none;
     display: flex;
 }
-li {
-    padding: 10px;
-}
-nav {
-    background: url("starfield-banner.jpg");
-max-width: 1366px;
-}
-.logo{
-    width: 25%;
-} 
 
-.contenedor{
+li {
+    padding: 30px;
+    
+}
+
+.contenedor {
     padding: 0 50px 0 50px;
 }
+
+.deflex{
+    display: flex;
+}
+
+/* estilos de nav */
+nav {
+    background: url("./imagenes/starfield-banner.jpg");
+    max-width: 1366px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 25%;
+}
+
+.pienav {
+    display: flex;
+    justify-content: center;
+}
+
+.tabmenu:hover {
+    background-color: #888;
+}
+
+.listaside {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Texto principal*/
+section{
+    width: 80%;
+}
+
+aside{
+    width: 20%;
+    background-color: #ffffff0a;   
+}
+
+.licolor{
+    color: white;
+}
+
+/*TABLA*/
+table { 
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 2px solid #dddddd;
+    text-align: left;
+    padding: 10px;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd solid;
+    color: black;
+  }
+
+  footer{
+      text-align: end;
+  }
+
+  .ovni {
+      width: 300px;
+      height: 300px;
+      float: right;
+  }
